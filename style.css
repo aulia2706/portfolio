@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Baloo+2&family=Balsamiq+Sans&family=Itim&family=Libre+Baskerville&family=Lobster&family=Poppins&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Abril Fatface', cursive;
+}
+
+header{
+  height: 71px;
+}
+header h1{
+  display: inline-block;
+  float: left;
+  padding: 14px 24px;
+  color: #AD997F;
+/*   text-transform: uppercase; */
+}
+header ul{
+  float: right;
+}
+header ul li{
+  padding: 24px;
+  display: inline-block;
+}
+
+header ul li a{
+  color: #AD997F;
+}
+header ul li a:hover{
+  color: #E37138;
+  transition: .3s;
+}
+a{
+  text-decoration: none;
+}
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+.container::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.mobile-menu{
+  float: right;
+  display: none;
+  padding: 18px;
+}
+.mobile-menu:hover{
+  cursor: pointer;
+}
+#check{
+  display: none; 
+}
+.sidebar{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -300px;
+  width: 300px;
+  background-color: #A66D51;
+  opacity: .7;
+  transition: .3s;
+  z-index: 9999;
+}
+.sidebar ul li a{
+  color: #EFE6E1;
+}
+
+.sidebar ul li{
+  padding: 24px;
+  transition: .5s;
+  transition-property: background-color;
+}
+.sidebar ul li:hover{
+  background-color:#BA4307;
+}
+#check:checked ~ .sidebar{
+  left:0;
+}
+.banner{
+  padding: 150px 0;
+  background-image: url(https://marketplace.canva.com/EAEv9USlq-0/1/0/1600w/canva-beige-pastel-abstract-leaf-desktop-wallpaper-kWg3ZjQdQhw.jpg);
+}
+.section{
+  padding: 50px 0;
+}
+.banner img{
+  width: 100px;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px #ddd;
+  margin-bottom: 10px;
+}
+.banner h2, .banner p, .banner span{
+  color: #7B8A59;
+  font-family: lobster
+}
+.banner h2{
+  margin-bottom: 10px;
+}
+banner p{
+  font-size: 25px;
+}
+.banner-left{
+  border-left: 24px;
+}
+section h3 {
+  padding-bottom: 20px;
+  text-align: center;
+  margin:20px;
+  position: relative;
+  color: #7B8A59;
+}
+section h3::before {
+  content:'';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width:120px;
+  height:1px;
+  background-color: #ddd;
+  left: calc(50% - 60px);
+}
+section h3::after {
+  content:'';
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  width:40px;
+  height:4px;
+  background-color: #C08CCC;
+  left: calc(50% - 20px);
+}
+
+#about p{
+  font-family: itim;
+  text-align: justify;
+  text-indent: 30px;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+#skills, #contact{
+  border-color: #f9f9f9;
+}
+#skills .bar{
+  height: 30px;
+  background-color: #fff;
+  border:  1px solid #ddd;
+  margin: 5px 0 20px 0;  
+}
+ h4{
+   color: #AD997F;
+}
+
+.bar .nilai{
+  height: 30px;
+  display: inline-block;
+  background-color: #AD997F;
+  color: #fff;
+  text-align: center;
+}
+.html{
+  width: 90%;
+}
+.css{
+  width: 80%;
+}
+.js{
+  width: 70%;
+}
+.mo{
+  width: 95%;
+}
+.ps{
+  width: 90%;
+}
+
+.col-4{
+  width: 25%;
+  box-sizing: border-box;
+  padding: 25px;
+  float: left;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.col-4 img{
+  width: 100%;
+}
+.col-4 a:hover img{
+  transform: scale(1.2);
+}
+
+.col-3{
+  width: 33.33%;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  padding: 50px 10px;
+}
+.col-3 h4{
+  padding-bottom: 10px;
+  border-bottom: 1 px solid #ddd;
+  margin-bottom: 15px;
+  color: #AD997F;
+}
+.col-3 p{
+  font-family: poppins;
+}
+footer{
+  background-color: #AD997F;
+  padding: 30px;
+  text-align: center;
+}
+footer small{
+  color: #fff;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+@media(max-width: 768px){
+  .mobile-menu{
+    display: block;
+  }
+  header ul{
+    display: none;
+  }
+  .col-4{
+    width: 50%;
+  }
+  .col-3{
+    width: 100%;
+  }
+}
